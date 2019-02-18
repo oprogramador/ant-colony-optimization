@@ -1,7 +1,6 @@
 function ants(state) {
   function create() {
-    const x = state.parameters.initial.x;
-    const y = state.parameters.initial.y;
+    const { x, y } = state.parameters.initial;
     if (typeof x === 'number' && typeof y === 'number' && x >= 0 && y >= 0 && x < state.width && y < state.height) {
       state.ants.push({
         health: 1,
