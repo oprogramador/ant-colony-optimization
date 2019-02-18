@@ -13,7 +13,11 @@
     "type": "git",
     "url": "git+https://github.com/oprogramador/ant-colony-optimization.git"
   },
-  "keywords": ["ant","colony","optimization"],
+  "keywords": [
+    "ant",
+    "colony",
+    "optimization"
+  ],
   "author": "oprogramador",
   "license": "MIT",
   "bugs": {
@@ -21,6 +25,7 @@
   },
   "homepage": "https://github.com/oprogramador/ant-colony-optimization#readme",
   "devDependencies": {
+    "@babel/core": "^7.3.3",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-plugin-module-resolver": "^3.2.0",
