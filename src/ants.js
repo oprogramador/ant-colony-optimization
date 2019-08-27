@@ -34,7 +34,7 @@ function ants(state) {
 
   function moveAll() {
     getLivingAnts().forEach((ant, i) => {
-      const newAnt = Object.assign({}, ant);
+      const newAnt = { ...ant };
       const isHorizontalDirection = Math.random() < 0.5;
       const delta = 0.1;
       if (isHorizontalDirection) {
