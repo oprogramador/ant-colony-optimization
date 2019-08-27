@@ -1,12 +1,9 @@
 {
-  "plugins": [
-    "transform-es2015-modules-commonjs",
+  "presets": [
     [
-      "module-resolver",
+      "@babel/preset-env",
       {
-        "alias": {
-          "ant-colony-optimization": "./src",
-        }
+        "useBuiltIns": "entry"
       }
     ]
   ]

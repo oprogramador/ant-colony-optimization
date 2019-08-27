@@ -7,7 +7,7 @@
     "build": "rm -rf build && babel src --out-dir build --ignore tests/",
     "lint": "eslint src",
     "prepublishOnly": "npm run build",
-    "test": "mocha -r babel-register --recursive src/tests --timeout 5000"
+    "test": "mocha -r @babel/register --recursive src/tests --timeout 5000"
   },
   "repository": {
     "type": "git",
@@ -25,12 +25,11 @@
   },
   "homepage": "https://github.com/oprogramador/ant-colony-optimization#readme",
   "devDependencies": {
+    "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.5",
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/register": "^7.5.5",
     "babel-plugin-module-resolver": "^3.2.0",
-    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
-    "babel-register": "^6.26.0",
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
     "chai-subset": "^1.6.0",
